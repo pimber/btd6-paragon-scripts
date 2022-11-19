@@ -43,7 +43,7 @@ StartNextRound(){
 
 SelectMonkey(monkey_type){
     Sleep, 500
-    Send, %monkey_type% ; Change hotkey to select different monkeys
+    Send, %monkey_type%
     Sleep, 500
 }
 
@@ -91,7 +91,7 @@ PlaceMonkey(monkey_type, x, y, one, two, three){
 
 Monkey(){
     Sleep, 500
-    ; To add a new mokney, add the PlaceMonkey() again with new x and y
+    ; To add a new mokney, add the PlaceMonkey() again with hotkeyshortcut, x and y
     ; coordinates and which upgardes the need to have
     PlaceMonkey("v", 625, 400, 4, 0, 2)
     PlaceMonkey("d", 625, 400, 4, 0, 2)
